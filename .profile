@@ -1,3 +1,5 @@
+alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
+alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 alias ll='ls -l'
 alias l='ls -al'
 alias c='clear'
@@ -16,7 +18,18 @@ alias nrp='npm run prettier'
 alias nrl='npm run lint'
 alias kb='kubectl'
 
+export EDITOR='/usr/bin/vim'
+
 function perf {
   curl -o /dev/null -s -w "%{time_connect} + %{time_starttransfer} = %{time_total} s\n" "$1"
 }
 
+function sshup {
+    if [ -z "$1" ]
+    then
+        echo "No key file supplied"
+        return 1
+    fi
+
+    eval "$(ssh-agent -s)" && ssh-add "$1"
+}
