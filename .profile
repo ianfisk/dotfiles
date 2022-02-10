@@ -21,7 +21,7 @@ alias kb='kubectl'
 export EDITOR='/usr/bin/vim'
 
 function perf {
-  curl -o /dev/null -s -w "Establish Connection: %{time_connect}s\nTTFB: %{time_starttransfer}s\nTotal: %{time_total}s\n" "$1"
+  curl -o /dev/null -s -w "%{time_connect} + %{time_starttransfer} = %{time_total} s\n" "$1"
 }
 
 function sshup {
@@ -33,3 +33,7 @@ function sshup {
 
     eval "$(ssh-agent -s)" && ssh-add "$1"
 }
+
+export PS1="\[\e]0;\u@\h: \w\a\]\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\W\[\033[00m\]$ "
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"

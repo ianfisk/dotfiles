@@ -1,8 +1,80 @@
+// Place your settings in this file to overwrite the default settings
 {
-	"search.exclude": {
-		".git/": true,
-		"dist/": true,
-		"node_modules/": true
-	}
+  "editor.minimap.enabled": false,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": false,
+  "editor.fontSize": 13,
+  "terminal.integrated.fontSize": 13,
+  "workbench.colorTheme": "Atom One Dark",
+  "workbench.sideBar.location": "left",
+  "editor.renderWhitespace": "all",
+  "editor.cursorSurroundingLines": 2,
+  "multiCommand.commands": [
+    {
+      "command": "multiCommand.openFile",
+      "sequence": ["list.select", "workbench.action.keepEditor"]
+    },
+    {
+      "command": "multiCommand.showFileInSideBar",
+      "sequence": [
+        "workbench.files.action.showActiveFileInExplorer",
+        "workbench.action.focusSideBar"
+      ]
+    },
+    {
+      "command": "multiCommand.openMaxBash",
+      "sequence": [
+        "workbench.action.toggleMaximizedPanel",
+        "workbench.action.terminal.focus",
+        "workbench.action.terminal.scrollToBottom"
+      ]
+    },
+    {
+      "command": "multiCommand.closeMaxBash",
+      "sequence": [
+        "workbench.action.toggleMaximizedPanel",
+        // "workbench.action.terminal.focusAtIndex2",
+        "workbench.action.terminal.scrollToBottom",
+        "workbench.action.focusActiveEditorGroup"
+      ]
+    },
+    {
+      "command": "multiCommand.escapeGlobalSearch",
+      "sequence": [
+        "workbench.action.showActiveFileInExplorer",
+        "workbench.action.focusActiveEditorGroup",
+      ]
+    }
+  ],
+  "window.zoomLevel": 0,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "sync.gist": "9ee6b15e1faec222269a01f2abf8c650",
+  "sync.autoDownload": false,
+  "sync.autoUpload": false,
+  "sync.forceDownload": false,
+  "sync.askGistName": false,
+  "explorer.openEditors.visible": 0,
+  "files.insertFinalNewline": true,
+  "explorer.confirmDragAndDrop": false,
+  "sync.removeExtensions": true,
+  "sync.syncExtensions": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.detectIndentation": false,
+  "editor.formatOnSave": true,
+  "[json]": {
+    "editor.formatOnSave": false,
+    "editor.insertSpaces": true
+  },
+  "[yaml]": {
+    "editor.formatOnSave": false
+  },
+  "[markdown]": {
+    "editor.formatOnSave": false
+  },
+  "breadcrumbs.enabled": false,
+  "editor.tabCompletion": "on",
+  "editor.suggest.localityBonus": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "terminal.integrated.shell.osx": "/bin/bash",
+  "editor.hover.delay": 800,
 }
-
