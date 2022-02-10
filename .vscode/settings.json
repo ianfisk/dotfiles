@@ -77,4 +77,5 @@
   "editor.multiCursorModifier": "ctrlCmd",
   "terminal.integrated.shell.osx": "/bin/bash",
   "editor.hover.delay": 800,
+  "files.trimTrailingWhitespace": true,
 }
