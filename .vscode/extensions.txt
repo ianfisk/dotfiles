@@ -1,2 +1,4 @@
 Good extensions I've used in the past:
 - multi-command
+- Atom One Dark Theme
+- TODO Highlight

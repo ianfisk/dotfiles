@@ -17,7 +17,17 @@
     "command": "editor.unfold",
     "when": "editorTextFocus"
   },
+  {
+    "key": "enter",
+    "command": "multiCommand.openFile",
+    "when": "explorerViewletVisible && filesExplorerFocus"
+  },
   { "key": "cmd+\\", "command": "workbench.action.toggleSidebarVisibility" },
+  {
+    "key": "cmd+shift+\\",
+    "command": "multiCommand.showFileInSideBar",
+    "when": "editorTextFocus"
+  },
   {
     "key": "cmd+\\",
     "command": "workbench.action.debug.continue",
@@ -58,6 +68,21 @@
   },
   { "key": "cmd+r", "command": "workbench.action.tasks.runTask" },
   {
+    "key": "cmd+g",
+    "command": "multiCommand.openMaxBash",
+    "when": "editorFocus"
+  },
+  {
+    "key": "cmd+g",
+    "command": "multiCommand.closeMaxBash",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "escape",
+    "command": "multiCommand.escapeGlobalSearch",
+    "when": "searchViewletVisible && searchInputBoxFocus || searchViewletVisible && inputBoxFocus && !searchInputBoxFocus"
+  },
+  {
     "key": "cmd+1",
     "command": "workbench.action.terminal.focusAtIndex1",
     "when": "terminalFocus"
@@ -95,33 +120,6 @@
     "command": "workbench.action.navigateForward",
     "when": "editorFocus"
   },
-
-  {
-    "key": "cmd+g",
-    "command": "multiCommand.openMaxBash",
-    "when": "editorFocus"
-  },
-  {
-    "key": "cmd+g",
-    "command": "multiCommand.closeMaxBash",
-    "when": "terminalFocus"
-  },
-  {
-    "key": "enter",
-    "command": "multiCommand.openFile",
-    "when": "explorerViewletVisible && filesExplorerFocus"
-  },
-  {
-    "key": "cmd+shift+\\",
-    "command": "multiCommand.showFileInSideBar",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "escape",
-    "command": "multiCommand.escapeGlobalSearch",
-    "when": "searchViewletVisible && searchInputBoxFocus || searchViewletVisible && inputBoxFocus && !searchInputBoxFocus"
-  },
-
   { "key": "cmd+q", "command": "-workbench.action.quit" },
   { "key": "cmd+q cmd+q", "command": "workbench.action.quit" }
 ]
