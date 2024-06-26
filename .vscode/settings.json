@@ -35,7 +35,7 @@
         "workbench.action.toggleMaximizedPanel",
         // "workbench.action.terminal.focusAtIndex2",
         "workbench.action.terminal.scrollToBottom",
-        "workbench.action.focusActiveEditorGroup"
+        "workbench.action.focusActiveEditorGroup",
       ]
     },
     {
@@ -78,4 +78,10 @@
   "terminal.integrated.shell.osx": "/bin/bash",
   "editor.hover.delay": 800,
   "files.trimTrailingWhitespace": true,
+  "extensions.ignoreRecommendations": true,
+
+  "files.associations": {
+      "*.h": "c",
+      "*.c": "c"
+  }
 }
