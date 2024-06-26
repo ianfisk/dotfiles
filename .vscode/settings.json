@@ -35,14 +35,14 @@
         "workbench.action.toggleMaximizedPanel",
         // "workbench.action.terminal.focusAtIndex2",
         "workbench.action.terminal.scrollToBottom",
-        "workbench.action.focusActiveEditorGroup",
+        "workbench.action.focusActiveEditorGroup"
       ]
     },
     {
       "command": "multiCommand.escapeGlobalSearch",
       "sequence": [
         "workbench.action.showActiveFileInExplorer",
-        "workbench.action.focusActiveEditorGroup",
+        "workbench.action.focusActiveEditorGroup"
       ]
     }
   ],
@@ -71,6 +71,10 @@
   "[markdown]": {
     "editor.formatOnSave": false
   },
+  "[rust]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4
+  },
   "breadcrumbs.enabled": false,
   "editor.tabCompletion": "on",
   "editor.suggest.localityBonus": true,
@@ -81,7 +85,7 @@
   "extensions.ignoreRecommendations": true,
 
   "files.associations": {
-      "*.h": "c",
-      "*.c": "c"
+    "*.h": "c",
+    "*.c": "c"
   }
 }
