@@ -3,6 +3,7 @@ alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall F
 alias ll='ls -l'
 alias l='ls -al'
 alias c='clear'
+alias .1='cd ../'
 alias .2='cd ../../'
 alias .3='cd ../../../'
 alias .4='cd ../../../../'
@@ -19,6 +20,7 @@ alias nrl='npm run lint'
 alias kb='kubectl'
 
 export EDITOR='/usr/bin/vim'
+export BASH_SILENCE_DEPRECATION_WARNING=1
 
 function perf {
   curl -o /dev/null -s -w "%{time_connect} + %{time_starttransfer} = %{time_total} s\n" "$1"
