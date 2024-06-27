@@ -73,7 +73,8 @@
   },
   "[rust]": {
     "editor.insertSpaces": true,
-    "editor.tabSize": 4
+    "editor.tabSize": 4,
+    "editor.inlayHints.enabled": "offUnlessPressed"
   },
   "breadcrumbs.enabled": false,
   "editor.tabCompletion": "on",
