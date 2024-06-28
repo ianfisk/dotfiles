@@ -162,7 +162,7 @@
 },
 
 { "key": "ctrl+q", "command": "-workbench.action.quit" },
-{ "key": "ctrl+q ctrl+q", "command": "workbench.action.quit" }
+{ "key": "ctrl+q ctrl+q", "command": "workbench.action.quit" },
 
 // Replaces ctrl+. to open quick fixes (useful for adding "using ...;")
 { "key": "alt+.",                "command": "editor.action.quickFix",
