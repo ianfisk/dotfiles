@@ -20,6 +20,8 @@ A collection of helpful commands and workflows I've leveraged in my life as a pr
 
 - `ctrl+w` - Delete from the current position to the start of the word.
 
+- `pushd <dir>`, `popd` - Move around the file systems by pushing and popping location from a stack.
+
 ## Git
 
 Recommended reading for beginners: https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository and https://www.atlassian.com/git (good workflow examples)
@@ -43,6 +45,15 @@ Also see presentation I put together for Noah from the Methow on my basic git wo
 - `git reset --hard` - Reset all changes to tracked files AND delete all new, untracked files. Resets the world back to the last commit (or a specified commit)
 
 - `git show <commit hash>` - Show a commit's changes in the terminal.
+
+My global config values:
+
+```
+init.defaultbranch=main
+user.name=Ian Fisk
+user.email=<...>
+pull.rebase=true
+```
 
 ## Vim
 
