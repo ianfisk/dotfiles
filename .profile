@@ -1,3 +1,13 @@
+# If not running interactively (e.g., a shell script), don't do anything.
+# IANFISK: There will be a login loop on the pi without this block.
+case $- in
+    *i*) ;;
+      *) return;;
+esac
+
+alias ls='ls -G'
+alias grep='grep --color=auto'
+
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 alias ll='ls -l'
@@ -18,6 +28,7 @@ alias gp='git pull --rebase'
 alias nrp='npm run prettier'
 alias nrl='npm run lint'
 alias kb='kubectl'
+alias lock='dm-tool lock'
 
 export EDITOR='/usr/bin/vim'
 export BASH_SILENCE_DEPRECATION_WARNING=1
@@ -39,4 +50,10 @@ function sshup {
 export PS1="\[\e]0;\u@\h: \w\a\]\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\W\[\033[00m\]$ "
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-. "$HOME/.cargo/env"
+
+# If running bash...
+if [ -n "$BASH_VERSION" ]; then
+    if [ -f "$HOME/.cargo/env" ]; then
+        . "$HOME/.cargo/env"
+    fi
+fi
