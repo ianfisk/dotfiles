@@ -44,6 +44,8 @@ Also see presentation I put together for Noah from the Methow on my basic git wo
 
 - `git reset --hard` - Reset all changes to tracked files AND delete all new, untracked files. Resets the world back to the last commit (or a specified commit)
 
+- `git reset --soft HEAD~1` - Reset HEAD back one commit while keeping the changes of the commit.
+
 - `git show <commit hash>` - Show a commit's changes in the terminal.
 
 - `git rebase -i HEAD~5` - Interactively rebase the last 5 commits to, say, squash a temporary commit into another one before pushing to the remote.
