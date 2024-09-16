@@ -63,7 +63,9 @@ pull.rebase=true
 
 - `dd` - Cut a line
 
-- `p` - Paste material copied with the `dd` command. `cmd+v` pastes material copied from outside of vim.
+- `p` - Paste material copied with the `dd` command. `cmd+v` or `shift+ins` pastes material copied from outside of vim.
+
+- `shift+ins` - Paste normal copy bin into vim.
 
 ## OSX
 
