@@ -57,3 +57,10 @@ if [ -n "$BASH_VERSION" ]; then
         . "$HOME/.cargo/env"
     fi
 fi
+
+# Per the Jekyll install instructions and https://stackoverflow.com/questions/51126403/you-dont-have-write-permissions-for-the-library-ruby-gems-2-3-0-directory-ma
+# installing another version of Ruby (chruby) alongside Apple's packaged version we don't want to change.
+# Configure bash to use chruby.
+source $(brew --prefix)/opt/chruby/share/chruby/chruby.sh
+source $(brew --prefix)/opt/chruby/share/chruby/auto.sh
+chruby ruby-3.3.5
