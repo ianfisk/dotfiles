@@ -78,3 +78,9 @@ pull.rebase=true
 - `ctrl+down arrow` - Show all windows of a current program.
 
 - `cmd+shift+4` - Screenshoot tool, also very useful to get a straight line on the screen for UI development.
+
+## Tools
+
+- Network monitoring: Charles Proxy, Wireshark
+
+- Audio/video manipulation: `ffmpeg`
