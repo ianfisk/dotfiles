@@ -41,7 +41,7 @@
     {
       "command": "multiCommand.escapeGlobalSearch",
       "sequence": [
-        "workbench.action.showActiveFileInExplorer",
+        "workbench.files.action.showActiveFileInExplorer",
         "workbench.action.focusActiveEditorGroup"
       ]
     }

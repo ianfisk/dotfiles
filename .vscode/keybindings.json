@@ -1,4 +1,6 @@
 // Place your key bindings in this file to override the defaults
+// To see which commands are being executed in VS Code, go to the
+// Output window > Change log level to Trace (cog icon on right)
 [
   {
     "key": "ctrl+b",

@@ -3,3 +3,16 @@ Good extensions I've used in the past:
 - Atom One Dark Theme
 - TODO Highlight
 - CodeLLDB (debugging Rust)
+- Remote - SSH
+
+Optional:
+- EditorConfig for VS Code
+- ESLint
+- JSON Tools
+- Prettier
+- rust
+- Rust Syntax
+- rust-analyzer
+- Pylance
+- Python
+- Python Debugger
