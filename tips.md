@@ -22,6 +22,8 @@ A collection of helpful commands and workflows I've leveraged in my life as a pr
 
 - `pushd <dir>`, `popd` - Move around the file systems by pushing and popping location from a stack.
 
+- `qpdf --qdf --object-streams=disable [infile] [outfile]` - Uncompress a PDF's object streams and generate a file that is inspectable in a text editor. This can be useful to look at PDF comments that fail to render on (most?) PDF viewers.
+
 ## Git
 
 Recommended reading for beginners: https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository and https://www.atlassian.com/git (good workflow examples)
