@@ -86,3 +86,7 @@ pull.rebase=true
 - Network monitoring: Charles Proxy, Wireshark
 
 - Audio/video manipulation: `ffmpeg`
+
+## Jupyter
+
+- You can run the brew-installed version using the command `jupyter notebook`, BUT this is not in the same environment as `pip` installed modules. To get around this, you can run the `pip` installed version using `python3 -m notebook`.
