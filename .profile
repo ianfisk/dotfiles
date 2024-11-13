@@ -29,6 +29,7 @@ alias nrp='npm run prettier'
 alias nrl='npm run lint'
 alias kb='kubectl'
 alias lock='dm-tool lock'
+alias pip='pipx'
 
 export EDITOR='/usr/bin/vim'
 export BASH_SILENCE_DEPRECATION_WARNING=1
