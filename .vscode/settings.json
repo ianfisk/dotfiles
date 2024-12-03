@@ -92,5 +92,6 @@
 
   "scm.autoReveal": false,
   "git.enabled": false,
-  "terminal.integrated.allowChords": false
+  "terminal.integrated.allowChords": false,
+  "remote.SSH.maxReconnectionAttempts": 2
 }
