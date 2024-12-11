@@ -76,6 +76,9 @@
     "editor.tabSize": 4,
     "editor.inlayHints.enabled": "offUnlessPressed"
   },
+  "workbench.colorCustomizations": {
+    "editorWarning.foreground": "#ffe60050",
+  },
   "breadcrumbs.enabled": false,
   "editor.tabCompletion": "on",
   "editor.suggest.localityBonus": true,
