@@ -77,6 +77,7 @@
     "editor.inlayHints.enabled": "offUnlessPressed"
   },
   "workbench.colorCustomizations": {
+    "editorError.foreground": "#ff000088",
     "editorWarning.foreground": "#ffe60050",
   },
   "breadcrumbs.enabled": false,
