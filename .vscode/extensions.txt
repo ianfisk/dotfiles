@@ -16,3 +16,4 @@ Optional:
 - Pylance
 - Python
 - Python Debugger
+- Language Support for Java(TM) by Red Hat
