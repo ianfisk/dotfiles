@@ -63,7 +63,7 @@
   "editor.formatOnSave": true,
   "[json]": {
     "editor.formatOnSave": false,
-    "editor.insertSpaces": true
+    "editor.insertSpaces": true,
   },
   "[yaml]": {
     "editor.formatOnSave": false
@@ -75,6 +75,9 @@
     "editor.insertSpaces": true,
     "editor.tabSize": 4,
     "editor.inlayHints.enabled": "offUnlessPressed"
+  },
+  "[csharp]": {
+    "editor.detectIndentation": true, // To minimize changes in Unity projects.
   },
   "workbench.colorCustomizations": {
     "editorError.foreground": "#ff000088",
