@@ -90,3 +90,13 @@ pull.rebase=true
 ## Jupyter
 
 - You can run the brew-installed version using the command `jupyter notebook`, BUT this is not in the same environment as `pip` installed modules. To get around this, you can run the `pip` installed version using `python3 -m notebook`.
+
+## Debugging
+
+- `F5` - Typically I like to set this as the shortcut to run the application in **debug** mode
+
+- `shift+F5` - Stop the debugging session (typical Visual Studio hotkey)
+
+- `F10` or `cmd+'` - Step over (typical Visual Studio/Chrome Debugger hotkey)
+
+- `cmd+;`  - Step into (from the Chrome debugger; note F11 is hijacked on OSX)

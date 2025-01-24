@@ -161,12 +161,12 @@
     "command": "workbench.action.toggleSidebarVisibility"
   },
   {
-    "key": "ctrl+\\",
+    "key": "ctrl+\\", // Matches Chrome
     "command": "workbench.action.debug.continue",
     "when": "inDebugMode"
   },
   {
-    "key": "ctrl+'",
+    "key": "ctrl+'",  // Matches Chrome
     "command": "workbench.action.debug.stepOver",
     "when": "inDebugMode"
   },

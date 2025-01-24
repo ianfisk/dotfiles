@@ -31,12 +31,12 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "cmd+\\",
+    "key": "cmd+\\", // Matches Chrome
     "command": "workbench.action.debug.continue",
     "when": "inDebugMode"
   },
   {
-    "key": "cmd+'",
+    "key": "cmd+'", // Matches Chrome
     "command": "workbench.action.debug.stepOver",
     "when": "inDebugMode"
   },
