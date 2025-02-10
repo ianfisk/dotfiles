@@ -41,6 +41,11 @@ function perf {
 }
 
 function sshup {
+    # If ssh auth isn't working, try running $ ssh -vT git@github.com
+    # and seeing if that works. I've seen it FAIL at first because it's not identifying
+    # the github.com host and using my github key (it tries id_rsa, e.g.).
+    # If the connection fails, run $ sshup .ssh/<github key> and try again.
+
     if [ -z "$1" ]
     then
         echo "No key file supplied"
