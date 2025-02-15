@@ -30,8 +30,10 @@ alias nrl='npm run lint'
 alias kb='kubectl'
 alias lock='dm-tool lock'
 alias pip='python3 -m pip'
-alias java='/Applications/Eclipse.app/Contents/Eclipse/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.macosx.x86_64_21.0.4.v20240802-1551/jre/bin/java'
-alias javac='/Applications/Eclipse.app/Contents/Eclipse/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.macosx.x86_64_21.0.4.v20240802-1551/jre/bin/javac'
+
+# Aliases no longer necessary after installing JDK 23 on my machine. That fixed issues with /usr/bin/java
+# alias java='/Applications/Eclipse.app/Contents/Eclipse/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.macosx.x86_64_21.0.4.v20240802-1551/jre/bin/java'
+# alias javac='/Applications/Eclipse.app/Contents/Eclipse/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.macosx.x86_64_21.0.4.v20240802-1551/jre/bin/javac'
 
 export EDITOR='/usr/bin/vim'
 export BASH_SILENCE_DEPRECATION_WARNING=1
