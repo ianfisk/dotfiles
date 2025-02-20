@@ -102,8 +102,6 @@
   "terminal.integrated.allowChords": false,
   "remote.SSH.maxReconnectionAttempts": 2,
 
-  // Grabbed from the Eclipse run command. Using the default setting of JDK 21.0.4
-  "java.jdt.ls.java.home": "/Applications/Eclipse.app/Contents/Eclipse/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.macosx.x86_64_21.0.4.v20240802-1551/jre",
   "java.autobuild.enabled": false,
 
   "window.confirmSaveUntitledWorkspace": false,
