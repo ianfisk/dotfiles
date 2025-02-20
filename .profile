@@ -37,6 +37,7 @@ alias pip='python3 -m pip'
 
 export EDITOR='/usr/bin/vim'
 export BASH_SILENCE_DEPRECATION_WARNING=1
+export CLASSPATH='/Applications/Eclipse.app/Contents/Eclipse/plugins/*:~/code/eclipse-workspace/shared-classpath/*'
 
 function perf {
   curl -o /dev/null -s -w "%{time_connect} + %{time_starttransfer} = %{time_total} s\n" "$1"
