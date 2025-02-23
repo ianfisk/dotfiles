@@ -103,11 +103,17 @@
   "remote.SSH.maxReconnectionAttempts": 2,
 
   "java.autobuild.enabled": false,
+  "java.inlayHints.parameterNames.enabled": "none",
+  "java.completion.collapseCompletionItems": true,
+  "java.completion.maxResults": 5,
+	"[java]": {
+    "editor.quickSuggestionsDelay": 300,
+  },
 
   "window.confirmSaveUntitledWorkspace": false,
   "security.workspace.trust.enabled": false,
   "security.workspace.trust.startupPrompt": "never",
   "security.workspace.trust.emptyWindow": false,
 
-  "java.inlayHints.parameterNames.enabled": "none"
+  "lldb.suppressUpdateNotifications": true,
 }
