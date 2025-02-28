@@ -106,8 +106,9 @@
   "java.inlayHints.parameterNames.enabled": "none",
   "java.completion.collapseCompletionItems": true,
   "java.completion.maxResults": 5,
-	"[java]": {
-    "editor.quickSuggestionsDelay": 300,
+  "[java]": {
+    "editor.quickSuggestionsDelay": 1000,
+    "editor.parameterHints.enabled": false, // Doesn't seem to work if autocomplete suggestion is accepted.
   },
 
   "window.confirmSaveUntitledWorkspace": false,
@@ -116,4 +117,6 @@
   "security.workspace.trust.emptyWindow": false,
 
   "lldb.suppressUpdateNotifications": true,
+  "editor.inlineSuggest.edits.experimental.enabled": false,
+  "editor.inlineSuggest.enabled": false,
 }

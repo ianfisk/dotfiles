@@ -16,4 +16,8 @@ Optional:
 - Pylance
 - Python
 - Python Debugger
-- Language Support for Java(TM) by Red Hat
+- Extension Pack for Java
+	- Language Support for Java(TM) by Red Hat
+	- Test Runner for Java
+	- Debugger for Java
+	- Project Manager for Java

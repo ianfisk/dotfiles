@@ -81,6 +81,8 @@ pull.rebase=true
 
 - `cmd+shift+4` - Screenshoot tool, also very useful to get a straight line on the screen for UI development.
 
+- Kill "Control Center" to get rid of OSX's "You're screen is being shared" purple toolbar item.
+
 ## Tools
 
 - Network monitoring: Charles Proxy, Wireshark
