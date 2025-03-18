@@ -106,6 +106,8 @@
   "java.inlayHints.parameterNames.enabled": "none",
   "java.completion.collapseCompletionItems": true,
   "java.completion.maxResults": 5,
+  // Don't open a new integrated terminal for every debug session, just print to "DEBUG CONSOLE" tab.
+  "java.debug.settings.console": "internalConsole",
   "[java]": {
     "editor.quickSuggestionsDelay": 1000,
     "editor.parameterHints.enabled": false, // Doesn't seem to work if autocomplete suggestion is accepted.

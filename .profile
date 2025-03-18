@@ -67,6 +67,7 @@ function sshup {
 export PS1="\[\e]0;\u@\h: \w\a\]\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\W\[\033[00m\]$ "
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export PATH="$PATH:/Users/ianfisk/.local/bin:/Users/ianfisk/.maven/apache-maven-3.9.9/bin"
 
 # If running bash...
 if [ -n "$BASH_VERSION" ]; then

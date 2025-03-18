@@ -21,3 +21,4 @@ Optional:
 	- Test Runner for Java
 	- Debugger for Java
 	- Project Manager for Java
+	- Maven for Java
