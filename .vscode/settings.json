@@ -119,4 +119,5 @@
   "lldb.suppressUpdateNotifications": true,
   "editor.inlineSuggest.edits.experimental.enabled": false,
   "editor.inlineSuggest.enabled": false,
+	"editor.multiCursorPaste": "full",
 }
