@@ -54,6 +54,8 @@ Also see presentation I put together for Noah from the Methow on my basic git wo
 
 - `git add -p <filename>` - Interactively add chunks of a file (`-p` == `--patch`)
 
+- `git add '*blobPattern*'` - Use blob patterns to stage files. Must use in tics `''`, at least on my mac.
+
 My global config values:
 
 ```
