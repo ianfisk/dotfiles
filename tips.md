@@ -85,6 +85,13 @@ pull.rebase=true
 
 - Kill "Control Center" to get rid of OSX's "You're screen is being shared" purple toolbar item.
 
+- Zoom window
+	- Enable "Use scroll gesture with modifier keys to zoom."
+	- Set "Modifier key for scroll gesture" to Control (hold control and scroll => zooms)
+	- Zoom style: Picture-in-picture
+	- Advanced > "Zoomed image moves" Continuously with pointer
+	- Advanced > Modifiers for Temporary Actions > Enable Toggle Zoom with ^⌥
+
 ## Tools
 
 - Network monitoring: Charles Proxy, Wireshark
