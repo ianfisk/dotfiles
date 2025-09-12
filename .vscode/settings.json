@@ -1,123 +1,132 @@
 // Place your settings in this file to overwrite the default settings
 {
-  "editor.minimap.enabled": false,
-  "editor.tabSize": 2,
-  "editor.insertSpaces": false,
-  "editor.fontSize": 13,
-  "terminal.integrated.fontSize": 13,
-  "workbench.colorTheme": "Atom One Dark",
-  "workbench.sideBar.location": "left",
-  "editor.renderWhitespace": "all",
-  "editor.cursorSurroundingLines": 2,
-  "multiCommand.commands": [
-    {
-      "command": "multiCommand.openFile",
-      "sequence": ["list.select", "workbench.action.keepEditor"]
-    },
-    {
-      "command": "multiCommand.showFileInSideBar",
-      "sequence": [
-        "workbench.files.action.showActiveFileInExplorer",
-        "workbench.action.focusSideBar"
-      ]
-    },
-    {
-      "command": "multiCommand.openMaxBash",
-      "sequence": [
-        "workbench.action.toggleMaximizedPanel",
-        "workbench.action.terminal.focus",
-        "workbench.action.terminal.scrollToBottom"
-      ]
-    },
-    {
-      "command": "multiCommand.closeMaxBash",
-      "sequence": [
-        "workbench.action.toggleMaximizedPanel",
-        // "workbench.action.terminal.focusAtIndex2",
-        "workbench.action.terminal.scrollToBottom",
-        "workbench.action.focusActiveEditorGroup"
-      ]
-    },
-    {
-      "command": "multiCommand.escapeGlobalSearch",
-      "sequence": [
-        "workbench.files.action.showActiveFileInExplorer",
-        "workbench.action.focusActiveEditorGroup"
-      ]
-    }
-  ],
-  "window.zoomLevel": 0,
-  "workbench.editor.enablePreviewFromQuickOpen": false,
-  "sync.gist": "9ee6b15e1faec222269a01f2abf8c650",
-  "sync.autoDownload": false,
-  "sync.autoUpload": false,
-  "sync.forceDownload": false,
-  "sync.askGistName": false,
-  "explorer.openEditors.visible": 0,
-  "files.insertFinalNewline": true,
-  "explorer.confirmDragAndDrop": false,
-  "sync.removeExtensions": true,
-  "sync.syncExtensions": true,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "editor.detectIndentation": false,
-  "editor.formatOnSave": true,
-  "[json]": {
-    "editor.formatOnSave": false,
-    "editor.insertSpaces": true,
-  },
-  "[yaml]": {
-    "editor.formatOnSave": false
-  },
-  "[markdown]": {
-    "editor.formatOnSave": false
-  },
-  "[rust]": {
-    "editor.insertSpaces": true,
-    "editor.tabSize": 4,
-    "editor.inlayHints.enabled": "offUnlessPressed"
-  },
-  "[csharp]": {
-    "editor.detectIndentation": true, // To minimize changes in Unity projects.
-  },
-  "workbench.colorCustomizations": {
-    "editorError.foreground": "#ff000088",
-    "editorWarning.foreground": "#ffe60050",
-  },
-  "breadcrumbs.enabled": false,
-  "editor.tabCompletion": "on",
-  "editor.suggest.localityBonus": true,
-  "editor.multiCursorModifier": "ctrlCmd",
-  "terminal.integrated.shell.osx": "/bin/bash",
-  "editor.hover.delay": 800,
-  "files.trimTrailingWhitespace": true,
-  "extensions.ignoreRecommendations": true,
-
-  "files.associations": {
-    "*.h": "c",
-    "*.c": "c"
-  },
-
-  "scm.autoReveal": false,
-  "git.enabled": false,
-  "terminal.integrated.allowChords": false,
-  "remote.SSH.maxReconnectionAttempts": 2,
-
-  "java.autobuild.enabled": false,
-  "java.inlayHints.parameterNames.enabled": "none",
-  "java.completion.collapseCompletionItems": true,
-  "java.completion.maxResults": 5,
-  "[java]": {
-    "editor.quickSuggestionsDelay": 1000,
-    "editor.parameterHints.enabled": false, // Doesn't seem to work if autocomplete suggestion is accepted.
-  },
-
-  "window.confirmSaveUntitledWorkspace": false,
-  "security.workspace.trust.enabled": false,
-  "security.workspace.trust.startupPrompt": "never",
-  "security.workspace.trust.emptyWindow": false,
-
-  "lldb.suppressUpdateNotifications": true,
-  "editor.inlineSuggest.edits.experimental.enabled": false,
-  "editor.inlineSuggest.enabled": false,
+	"editor.minimap.enabled": false,
+	"editor.tabSize": 2,
+	"editor.insertSpaces": false,
+	"editor.fontSize": 13,
+	"terminal.integrated.fontSize": 13,
+	"workbench.colorTheme": "Atom One Dark",
+	"workbench.sideBar.location": "left",
+	"editor.renderWhitespace": "all",
+	"editor.cursorSurroundingLines": 2,
+	"multiCommand.commands": [
+		{
+			"command": "multiCommand.openFile",
+			"sequence": [
+				"list.select",
+				"workbench.action.keepEditor"
+			]
+		},
+		{
+			"command": "multiCommand.showFileInSideBar",
+			"sequence": [
+				"workbench.files.action.showActiveFileInExplorer",
+				"workbench.action.focusSideBar"
+			]
+		},
+		{
+			"command": "multiCommand.openMaxBash",
+			"sequence": [
+				"workbench.action.toggleMaximizedPanel",
+				"workbench.action.terminal.focus",
+				"workbench.action.terminal.scrollToBottom"
+			]
+		},
+		{
+			"command": "multiCommand.closeMaxBash",
+			"sequence": [
+				"workbench.action.toggleMaximizedPanel",
+				// "workbench.action.terminal.focusAtIndex2",
+				"workbench.action.terminal.scrollToBottom",
+				"workbench.action.focusActiveEditorGroup"
+			]
+		},
+		{
+			"command": "multiCommand.escapeGlobalSearch",
+			"sequence": [
+				"workbench.files.action.showActiveFileInExplorer",
+				"workbench.action.focusActiveEditorGroup"
+			]
+		}
+	],
+	"window.zoomLevel": 0,
+	"workbench.editor.enablePreviewFromQuickOpen": false,
+	"sync.gist": "9ee6b15e1faec222269a01f2abf8c650",
+	"sync.autoDownload": false,
+	"sync.autoUpload": false,
+	"sync.forceDownload": false,
+	"sync.askGistName": false,
+	"explorer.openEditors.visible": 0,
+	"files.insertFinalNewline": true,
+	"explorer.confirmDragAndDrop": false,
+	"sync.removeExtensions": true,
+	"sync.syncExtensions": true,
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"editor.detectIndentation": false,
+	"editor.formatOnSave": true,
+	"[json]": {
+		"editor.formatOnSave": false,
+		"editor.insertSpaces": true,
+	},
+	"[yaml]": {
+		"editor.formatOnSave": false
+	},
+	"[markdown]": {
+		"editor.formatOnSave": false
+	},
+	"[rust]": {
+		"editor.insertSpaces": true,
+		"editor.tabSize": 4,
+		"editor.inlayHints.enabled": "offUnlessPressed"
+	},
+	"[csharp]": {
+		"editor.detectIndentation": true, // To minimize changes in Unity projects.
+	},
+	"workbench.colorCustomizations": {
+		"editorError.foreground": "#ff000088",
+		"editorWarning.foreground": "#ffe60050",
+	},
+	"breadcrumbs.enabled": false,
+	"editor.tabCompletion": "on",
+	"editor.suggest.localityBonus": true,
+	"editor.multiCursorModifier": "ctrlCmd",
+	"terminal.integrated.shell.osx": "/bin/bash",
+	"editor.hover.delay": 800,
+	"files.trimTrailingWhitespace": true,
+	"extensions.ignoreRecommendations": true,
+	"files.associations": {
+		"*.h": "c",
+		"*.c": "c"
+	},
+	"scm.autoReveal": false,
+	"git.enabled": false,
+	"terminal.integrated.allowChords": false,
+	"remote.SSH.maxReconnectionAttempts": 2,
+	"java.autobuild.enabled": false,
+	"java.inlayHints.parameterNames.enabled": "none",
+	"java.completion.collapseCompletionItems": true,
+	"java.completion.maxResults": 5,
+	"[java]": {
+		"editor.quickSuggestionsDelay": 1000,
+		"editor.parameterHints.enabled": false, // Doesn't seem to work if autocomplete suggestion is accepted.
+	},
+	"python.defaultInterpreterPath": "/usr/bin/python3",
+	"[python]": {
+		"editor.quickSuggestionsDelay": 1000,
+		"editor.parameterHints.enabled": false, // Don't spam my screen with popup hints when showing VS Code to students
+	},
+	"window.confirmSaveUntitledWorkspace": false,
+	"security.workspace.trust.enabled": false,
+	"security.workspace.trust.startupPrompt": "never",
+	"security.workspace.trust.emptyWindow": false,
+	"lldb.suppressUpdateNotifications": true,
+	"editor.inlineSuggest.edits.experimental.enabled": false,
+	"editor.inlineSuggest.enabled": false,
 	"editor.multiCursorPaste": "full",
+	"chat.agent.enabled": false,
+	"chat.commandCenter.enabled": false,
+	"chat.notifyWindowOnConfirmation": false,
+	"telemetry.feedback.enabled": false,
+	"inlineChat.accessibleDiffView": "off",
+	"explorer.confirmDelete": false,
 }
