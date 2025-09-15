@@ -114,6 +114,8 @@
 	"[python]": {
 		"editor.quickSuggestionsDelay": 1000,
 		"editor.parameterHints.enabled": false, // Don't spam my screen with popup hints when showing VS Code to students
+		"editor.insertSpaces": true,
+		"editor.tabSize": 4,
 	},
 	"window.confirmSaveUntitledWorkspace": false,
 	"security.workspace.trust.enabled": false,
