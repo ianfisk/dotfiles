@@ -123,5 +123,11 @@
     "when": "editorFocus"
   },
   { "key": "cmd+q", "command": "-workbench.action.quit" },
-  { "key": "cmd+q cmd+q", "command": "workbench.action.quit" }
+  { "key": "cmd+q cmd+q", "command": "workbench.action.quit" },
+  {
+    // Match bash
+    "key": "ctrl+w",
+    "command": "deleteWordLeft",
+    "when": "textInputFocus && !editorReadonly"
+  }
 ]
