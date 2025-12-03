@@ -1,6 +1,6 @@
 // Place your settings in this file to overwrite the default settings
 {
-	"editor.minimap.enabled": false,
+	"update.mode": "manual",
 	"editor.tabSize": 2,
 	"editor.insertSpaces": false,
 	"editor.fontSize": 13,
@@ -12,10 +12,7 @@
 	"multiCommand.commands": [
 		{
 			"command": "multiCommand.openFile",
-			"sequence": [
-				"list.select",
-				"workbench.action.keepEditor"
-			]
+			"sequence": ["list.select", "workbench.action.keepEditor"]
 		},
 		{
 			"command": "multiCommand.showFileInSideBar",
@@ -66,7 +63,7 @@
 	"editor.formatOnSave": true,
 	"[json]": {
 		"editor.formatOnSave": false,
-		"editor.insertSpaces": true,
+		"editor.insertSpaces": true
 	},
 	"[yaml]": {
 		"editor.formatOnSave": false
@@ -80,12 +77,34 @@
 		"editor.inlayHints.enabled": "offUnlessPressed"
 	},
 	"[csharp]": {
-		"editor.detectIndentation": true, // To minimize changes in Unity projects.
+		"editor.detectIndentation": true // To minimize changes in Unity projects.
 	},
+	"python.defaultInterpreterPath": "/usr/bin/python3",
+	"[python]": {
+		"editor.quickSuggestionsDelay": 1000,
+		"editor.parameterHints.enabled": false, // Don't spam my screen with popup hints when showing VS Code to students
+		"editor.insertSpaces": true,
+		"editor.tabSize": 4,
+	},
+	"[typescript]": {
+		"editor.quickSuggestionsDelay": 1000,
+	},
+
+	"java.autobuild.enabled": false,
+	"java.inlayHints.parameterNames.enabled": "none",
+	"java.completion.collapseCompletionItems": true,
+	"java.completion.maxResults": 5,
+	// "java.debug.settings.console": "internalConsole",
+	"[java]": {
+		"editor.quickSuggestionsDelay": 500,
+		"editor.parameterHints.enabled": false // Doesn't seem to work if autocomplete suggestion is accepted.
+	},
+	
 	"workbench.colorCustomizations": {
 		"editorError.foreground": "#ff000088",
-		"editorWarning.foreground": "#ffe60050",
+		"editorWarning.foreground": "#ffe60050"
 	},
+
 	"breadcrumbs.enabled": false,
 	"editor.tabCompletion": "on",
 	"editor.suggest.localityBonus": true,
@@ -101,27 +120,16 @@
 	"scm.autoReveal": false,
 	"git.enabled": false,
 	"terminal.integrated.allowChords": false,
+	"security.workspace.trust.untrustedFiles": "open",
 	"remote.SSH.maxReconnectionAttempts": 2,
-	"java.autobuild.enabled": false,
-	"java.inlayHints.parameterNames.enabled": "none",
-	"java.completion.collapseCompletionItems": true,
-	"java.completion.maxResults": 5,
-	"[java]": {
-		"editor.quickSuggestionsDelay": 1000,
-		"editor.parameterHints.enabled": false, // Doesn't seem to work if autocomplete suggestion is accepted.
-	},
-	"python.defaultInterpreterPath": "/usr/bin/python3",
-	"[python]": {
-		"editor.quickSuggestionsDelay": 1000,
-		"editor.parameterHints.enabled": false, // Don't spam my screen with popup hints when showing VS Code to students
-		"editor.insertSpaces": true,
-		"editor.tabSize": 4,
-	},
 	"window.confirmSaveUntitledWorkspace": false,
 	"security.workspace.trust.enabled": false,
 	"security.workspace.trust.startupPrompt": "never",
 	"security.workspace.trust.emptyWindow": false,
+	"editor.accessibilitySupport": "off",
 	"lldb.suppressUpdateNotifications": true,
+	"terminal.integrated.enableMultiLinePasteWarning": false,
+	"explorer.confirmPasteNative": false,
 	"editor.inlineSuggest.edits.experimental.enabled": false,
 	"editor.inlineSuggest.enabled": false,
 	"editor.multiCursorPaste": "full",
