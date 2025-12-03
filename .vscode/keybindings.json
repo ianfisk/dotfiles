@@ -31,12 +31,12 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "cmd+\\", // Matches Chrome
+    "key": "cmd+\\",
     "command": "workbench.action.debug.continue",
     "when": "inDebugMode"
   },
   {
-    "key": "cmd+'", // Matches Chrome
+    "key": "cmd+'",
     "command": "workbench.action.debug.stepOver",
     "when": "inDebugMode"
   },
@@ -129,5 +129,10 @@
     "key": "ctrl+w",
     "command": "deleteWordLeft",
     "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+i", // "i" for intelligence
+    "command": "editor.action.quickFix",
+    "when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
   }
 ]
