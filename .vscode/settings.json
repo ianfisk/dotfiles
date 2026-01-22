@@ -120,6 +120,7 @@
 	"scm.autoReveal": false,
 	"git.enabled": false,
 	"terminal.integrated.allowChords": false,
+	"terminal.integrated.suggest.enabled": false,
 	"security.workspace.trust.untrustedFiles": "open",
 	"remote.SSH.maxReconnectionAttempts": 2,
 	"window.confirmSaveUntitledWorkspace": false,
