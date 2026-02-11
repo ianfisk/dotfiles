@@ -26,6 +26,10 @@ A collection of helpful commands and workflows I've leveraged in my life as a pr
 
 - `less <file>` - Display contents of a file page-by-page in the terminal. Related: `head` and `tail`: `head -n <n_lines> <file>`
 
+- `curl ipinfo.io/<ip-addr>` - Display location information for a given IP address.
+
+- `traceroute <addr>` - Display the network path to the destination.
+
 ## Git
 
 Recommended reading for beginners: https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository and https://www.atlassian.com/git (good workflow examples)
