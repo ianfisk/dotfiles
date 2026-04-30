@@ -73,11 +73,15 @@ pull.rebase=true
 
 ## Vim
 
+Cheatsheet: https://devhints.io/vim
+
 - `dd` - Cut a line
 
 - `p` - Paste material copied with the `dd` command. `cmd+v` or `shift+ins` pastes material copied from outside of vim.
 
 - `shift+ins` - Paste normal copy bin into vim.
+
+- `A` - Append at the end of the line.
 
 ## OSX
 
