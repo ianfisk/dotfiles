@@ -46,6 +46,7 @@
 			]
 		}
 	],
+	"todohighlight.keywordsPattern": "(TODO|FIXME)(:|\\(([^)]+)\\):)",
 	"window.zoomLevel": 0,
 	"workbench.editor.enablePreviewFromQuickOpen": false,
 	"sync.gist": "9ee6b15e1faec222269a01f2abf8c650",
