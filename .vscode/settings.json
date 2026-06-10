@@ -87,6 +87,9 @@
 		"editor.insertSpaces": true,
 		"editor.tabSize": 4,
 	},
+	"[terraform]": {
+		"editor.insertSpaces": true,
+	},
 	"[typescript]": {
 		"editor.quickSuggestionsDelay": 1000,
 	},
