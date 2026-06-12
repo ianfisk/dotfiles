@@ -62,14 +62,14 @@ Also see presentation I put together for Noah from the Methow on my basic git wo
 
 - `git add '*blobPattern*'` - Use blob patterns to stage files. Must use in tics `''`, at least on my mac.
 
-My global config values:
+- `git config --list --show-scope` - Show config values and their scope. Use `git config --<scope> <key> <value>` to set. My global config values:
 
-```
-init.defaultbranch=main
-user.name=Ian Fisk
-user.email=<...>
-pull.rebase=true
-```
+	```
+	global  init.defaultbranch=main
+	global  user.name=Ian Fisk
+	global  user.email=<...>
+	global  pull.rebase=true
+	```
 
 ## Vim
 
