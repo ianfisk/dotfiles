@@ -62,6 +62,8 @@ Also see presentation I put together for Noah from the Methow on my basic git wo
 
 - `git add '*blobPattern*'` - Use blob patterns to stage files. Must use in tics `''`, at least on my mac.
 
+- `git stash push -p -m "my commit message"` - Interactively stash chunks (`-p`) with a message.
+
 - `git config --list --show-scope` - Show config values and their scope. Use `git config --<scope> <key> <value>` to set. My global config values:
 
 	```
