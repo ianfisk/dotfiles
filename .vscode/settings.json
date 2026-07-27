@@ -12,7 +12,10 @@
 	"multiCommand.commands": [
 		{
 			"command": "multiCommand.openFile",
-			"sequence": ["list.select", "workbench.action.keepEditor"]
+			"sequence": [
+				"list.select",
+				"workbench.action.keepEditor"
+			]
 		},
 		{
 			"command": "multiCommand.showFileInSideBar",
@@ -93,7 +96,6 @@
 	"[typescript]": {
 		"editor.quickSuggestionsDelay": 1000,
 	},
-
 	"java.autobuild.enabled": false,
 	"java.inlayHints.parameterNames.enabled": "none",
 	"java.completion.collapseCompletionItems": true,
@@ -103,17 +105,15 @@
 		"editor.quickSuggestionsDelay": 500,
 		"editor.parameterHints.enabled": false // Doesn't seem to work if autocomplete suggestion is accepted.
 	},
-	
 	"workbench.colorCustomizations": {
 		"editorError.foreground": "#ff000088",
 		"editorWarning.foreground": "#ffe60050"
 	},
-
 	"breadcrumbs.enabled": false,
 	"editor.tabCompletion": "on",
 	"editor.suggest.localityBonus": true,
 	"editor.multiCursorModifier": "ctrlCmd",
-	"terminal.integrated.shell.osx": "/bin/bash",
+	"terminal.integrated.defaultProfile.osx": "bash",
 	"editor.hover.delay": 800,
 	"files.trimTrailingWhitespace": true,
 	"extensions.ignoreRecommendations": true,
