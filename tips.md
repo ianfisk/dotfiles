@@ -44,6 +44,8 @@ Also see presentation I put together for Noah from the Methow on my basic git wo
 
 - `git checkout -b <new-branch>` - Create and checkout a new branch, e.g. for feature development like [this](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow).
 
+- `git branch -D <branch-name>` followed by `git push origin --delete <branch-name>` - Delete a branch locally and on the remote. If already deleted on the remote, `git remote prune origin` removes references locally.
+
 - `git push -u origin <new-branch>` - Push the new branch and set the local branch to track the upstream remote branch.
 
 - `git remote -vv` - View tracked remote repositories.
