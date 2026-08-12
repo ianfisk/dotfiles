@@ -40,7 +40,7 @@ Also see presentation I put together for Noah from the Methow on my basic git wo
 
 - Always specify the **remote** and **branch** when pushing. E.g., `git push origin main`.
 
-- `git branch -vv` - View local branches and what they track in the remote repo.
+- `git branch -vv -a` - View local and remote branches and what they track in the remote repo.
 
 - `git checkout -b <new-branch>` - Create and checkout a new branch, e.g. for feature development like [this](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow).
 
