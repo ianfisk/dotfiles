@@ -69,10 +69,11 @@ Also see presentation I put together for Noah from the Methow on my basic git wo
 - `git config --list --show-scope` - Show config values and their scope. Use `git config --<scope> <key> <value>` to set. My global config values:
 
 	```
-	global  init.defaultbranch=main
-	global  user.name=Ian Fisk
-	global  user.email=<...>
-	global  pull.rebase=true
+	git config --global init.defaultbranch "main"
+	git config --global user.name "Ian Fisk"
+	git config --global user.email "<...>"
+	git config --global pull.rebase "true"
+	git config --global alias.fpush "push --force-with-lease --force-if-includes"
 	```
 
 ## Vim
