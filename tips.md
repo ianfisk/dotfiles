@@ -58,6 +58,8 @@ Also see presentation I put together for Noah from the Methow on my basic git wo
 
 - `git show <commit hash>` - Show a commit's changes in the terminal.
 
+- `git log --all --decorate --oneline --graph` - Show the branch tree in the terminal. (Similar to `gll` alias.)
+
 - `git rebase -i HEAD~5` - Interactively rebase the last 5 commits to, say, squash a temporary commit into another one before pushing to the remote.
 
 - `git add -p <filename>` - Interactively add chunks of a file (`-p` == `--patch`)
