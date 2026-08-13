@@ -38,6 +38,7 @@ alias oc='opencode'
 
 export EDITOR='/usr/bin/vim'
 export BASH_SILENCE_DEPRECATION_WARNING=1
+export DO_NOT_TRACK=true
 # export CLASSPATH='/Applications/Eclipse.app/Contents/Eclipse/plugins/*:~/code/eclipse-workspace/shared-classpath/*'
 
 function perf {
