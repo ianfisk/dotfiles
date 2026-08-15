@@ -32,14 +32,9 @@ alias lock='dm-tool lock'
 alias pip='python3 -m pip'
 alias oc='opencode'
 
-# Aliases no longer necessary after installing JDK 23 on my machine. That fixed issues with /usr/bin/java
-# alias java='/Applications/Eclipse.app/Contents/Eclipse/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.macosx.x86_64_21.0.4.v20240802-1551/jre/bin/java'
-# alias javac='/Applications/Eclipse.app/Contents/Eclipse/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.macosx.x86_64_21.0.4.v20240802-1551/jre/bin/javac'
-
 export EDITOR='/usr/bin/vim'
 export BASH_SILENCE_DEPRECATION_WARNING=1
 export DO_NOT_TRACK=true
-# export CLASSPATH='/Applications/Eclipse.app/Contents/Eclipse/plugins/*:~/code/eclipse-workspace/shared-classpath/*'
 
 function perf {
   curl -o /dev/null -s -w "%{time_connect} + %{time_starttransfer} = %{time_total} s\n" "$1"
@@ -68,15 +63,18 @@ function sshup {
 
 export PS1="\[\e]0;\u@\h: \w\a\]\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\W\[\033[00m\]$ "
 
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-export PATH="$PATH:/Users/ianfisk/.local/bin:/Users/ianfisk/.maven/apache-maven-3.9.9/bin"
-
 # If running bash...
 if [ -n "$BASH_VERSION" ]; then
     if [ -f "$HOME/.cargo/env" ]; then
         . "$HOME/.cargo/env"
     fi
 fi
+
+export PATH="/Users/ianfisk/.local/bin:$PATH"
+eval "$(/opt/homebrew/bin/brew shellenv bash)"
+
+# Added by the opencode installer.
+export PATH="/Users/ianfisk/.opencode/bin:$PATH"
 
 # Per the Jekyll install instructions and https://stackoverflow.com/questions/51126403/you-dont-have-write-permissions-for-the-library-ruby-gems-2-3-0-directory-ma
 # installing another version of Ruby (chruby) alongside Apple's packaged version we don't want to change.
