@@ -70,7 +70,10 @@ if [ -n "$BASH_VERSION" ]; then
     fi
 fi
 
-export PATH="/Users/ianfisk/.local/bin:$PATH"
+# Prioritize JDK installed manually. The java_home util is included by Apple and does the trick.
+# Setting JAVA_HOME controls which JDK Maven uses.
+export JAVA_HOME=$(/usr/libexec/java_home)
+export PATH="$JAVA_HOME/bin:/Users/ianfisk/.local/bin:$PATH"
 eval "$(/opt/homebrew/bin/brew shellenv bash)"
 
 # Added by the opencode installer.
