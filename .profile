@@ -31,6 +31,8 @@ alias kb='kubectl'
 alias lock='dm-tool lock'
 alias pip='python3 -m pip'
 alias oc='opencode'
+alias ca='source ~/miniforge3/bin/activate' # Prefer activating Conda when I need it.
+alias cad='conda deactivate'
 
 export EDITOR='/usr/bin/vim'
 export BASH_SILENCE_DEPRECATION_WARNING=1
