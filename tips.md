@@ -88,7 +88,8 @@ I prefer using a [stacked diffs](https://jg.gg/2018/09/29/stacked-diffs-versus-p
 
 - `git review` - Open stacked PRs. Use `git review --remote <remote-name>` to open a stack on a specific remote.
 
-- `git commit --fixup <commit-hash>` - Add changes to a previous commit. `git review` will automatically squash and push these changes to PRs.
+- `git commit --fixup <commit-hash>` - Add changes to a previous commit. Follow by `git rebase --autosquash` and `git review` to update PR stack.
+	- NOTE: Interactive rebasing also works; `git review` uses persistent `Change-Id`s to track canonical commits across rebases.
 
 ## Vim
 
