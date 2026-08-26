@@ -141,3 +141,25 @@ Cheatsheet: https://devhints.io/vim
 - `F10` or `cmd+'` - Step over (typical Visual Studio/Chrome Debugger hotkey)
 
 - `cmd+;`  - Step into (from the Chrome debugger; note F11 is hijacked on OSX)
+
+## tmux
+
+- `tmux new -s <session-name>` - Create a new named session.
+
+- `tmux a -t <target-session>` - _Attach_ to a target session by name.
+
+- `tmux ls` - List all sessions.
+
+_In tmux..._
+
+- `Ctrl+b, d` - Detach from the session.
+
+- `Ctrl+b, :` - Open the command prompt. Useful commands are `kill-window`, `rename-window`
+
+- `Ctrl+b, n` - Go to the next window.
+
+- `Ctrl+b, l` - Go to the previous window.
+
+- `Ctrl+b, "` - Split the screen into two panes.
+	- `Ctrl+b, o` - Switch pane.
+ 	- `Ctrl+b, x` - Close pane.
