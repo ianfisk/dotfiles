@@ -82,7 +82,7 @@ Recommended reading for beginners: https://git-scm.com/book/en/v2/Git-Basics-Get
 
 ### Stacked Diffs
 
-I prefer using a [stacked diffs](https://jg.gg/2018/09/29/stacked-diffs-versus-pull-requests/) [workflow](https://newsletter.pragmaticengineer.com/p/stacked-diffs), like what we used at Google. To support this, I use https://github.com/runetes/maiao.
+I prefer using a [stacked diffs](https://jg.gg/2018/09/29/stacked-diffs-versus-pull-requests/) [workflow](https://newsletter.pragmaticengineer.com/p/stacked-diffs), like what we used at Google. To support this, I use https://github.com/runetes/maiao with auth configured through `~/.netrc`.
 
 - `git review install` - Install the [Gerrit](https://opensource.google/projects/gerrit) commit-msg hook in your code repo.
 
