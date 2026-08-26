@@ -34,8 +34,6 @@ A collection of helpful commands and workflows I've leveraged in my life as a pr
 
 Recommended reading for beginners: https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository and https://www.atlassian.com/git (good workflow examples)
 
-Also see presentation I put together for Noah from the Methow on my basic git workflow [here](https://docs.google.com/presentation/d/1ysDcqWkBORyktLzNlvPg5xz-y1O9Kpibbv-lKYXCVHw/edit#slide=id.gc6f73a04f_0_0).
-
 - I prefer `git pull --rebase` to keep a clean, linear git history after adding my local commits. (See `gp` alias.)
 
 - Always specify the **remote** and **branch** when pushing. E.g., `git push origin main`.
@@ -76,7 +74,21 @@ Also see presentation I put together for Noah from the Methow on my basic git wo
 	git config --global user.email "<...>"
 	git config --global pull.rebase "true"
 	git config --global alias.fpush "push --force-with-lease --force-if-includes"
+	git config --global alias.
+
+ 	# Delete all `maiao` branches on a given remote $1. Usage: git cleanup origin
+	git config --global alias.cleanup '!f() { git branch -r --list "$1/maiao.*" | sed "s|$1/||" | xargs git push "$1" --delete; }; f'
 	```
+
+### Stacked Diffs
+
+I prefer using a [stacked diffs](https://jg.gg/2018/09/29/stacked-diffs-versus-pull-requests/) [workflow](https://newsletter.pragmaticengineer.com/p/stacked-diffs), like what we used at Google. To support this, I use https://github.com/runetes/maiao.
+
+- `git review install` - Install the [Gerrit](https://opensource.google/projects/gerrit) commit-msg hook in your code repo.
+
+- `git review` - Open stacked PRs. Use `git review --remote <remote-name>` to open a stack on a specific remote.
+
+- `git commit --fixup <commit-hash>` - Add changes to a previous commit. `git review` will automatically squash and push these changes to PRs.
 
 ## Vim
 
