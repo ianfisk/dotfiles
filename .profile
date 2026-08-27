@@ -53,14 +53,18 @@ function sshup {
     # sshup .ssh/<github key> and try again.
     # It's possible to clear all SSH identities with:
     # ssh-add -D
-
-    if [ -z "$1" ]
-    then
+    if [ "$#" -eq 0 ]; then
         echo "No key file supplied"
         return 1
     fi
 
-    eval "$(ssh-agent -s)" && ssh-add "$1"
+    # Start an agent only if one isn't already running
+    if [ -z "$SSH_AUTH_SOCK" ]; then
+        eval "$(ssh-agent -s)"
+    fi
+
+    # "$@" passes all supplied arguments/keys to ssh-add
+    ssh-add "$@"
 }
 
 export PS1="\[\e]0;\u@\h: \w\a\]\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\W\[\033[00m\]$ "
