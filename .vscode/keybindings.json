@@ -28,7 +28,7 @@
 	{
 		"key": "cmd+shift+\\",
 		"command": "multiCommand.showFileInSideBar",
-		"when": "editorTextFocus"
+		"when": "editorTextFocus || notebookEditorFocused"
 	},
 	{
 		"key": "cmd+\\",
