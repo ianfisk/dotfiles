@@ -144,4 +144,6 @@
 	"telemetry.feedback.enabled": false,
 	"inlineChat.accessibleDiffView": "off",
 	"explorer.confirmDelete": false,
+	"terraform.languageServer.enable": true,
+	"notebook.dragAndDropEnabled": false,
 }
