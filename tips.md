@@ -44,7 +44,7 @@ Recommended reading for beginners: https://git-scm.com/book/en/v2/Git-Basics-Get
 
 - `git branch -D <branch-name>` followed by `git push origin --delete <branch-name>` - Delete a branch locally and on the remote. If already deleted on the remote, `git remote prune origin` removes references locally.
 
-- `git push -u origin <new-branch>` - Push the new branch and set the local branch to track the upstream remote branch.
+- `git branch -u origin <new-branch>` - Set the local branch to track the upstream remote branch. Using `-u ...` with `git push` has the same effect.
 
 - `git remote -vv` - View tracked remote repositories.
 
