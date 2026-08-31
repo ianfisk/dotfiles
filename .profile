@@ -33,10 +33,25 @@ alias pip='python3 -m pip'
 alias oc='opencode'
 alias ca='source ~/miniforge3/bin/activate' # Prefer activating Conda when I need it.
 alias cad='conda deactivate'
+alias csu-vpn='toggle_csu_vpn'
 
 export EDITOR='/usr/bin/vim'
 export BASH_SILENCE_DEPRECATION_WARNING=1
 export DO_NOT_TRACK=true
+
+# For posterity: Edit each plist and disable RunAtLoad. Leave the login item toggled on in Settings.
+function toggle_csu_vpn {
+   if launchctl list | grep -q com.paloaltonetworks.gp; then
+      echo "Disabling CSU VPN"
+      launchctl bootout gui/$(id -u) /Library/LaunchAgents/com.paloaltonetworks.gp.pangps.plist
+      launchctl bootout gui/$(id -u) /Library/LaunchAgents/com.paloaltonetworks.gp.pangpa.plist
+   else
+      echo "Enabling CSU VPN"
+      launchctl bootstrap gui/$(id -u) /Library/LaunchAgents/com.paloaltonetworks.gp.pangps.plist
+      launchctl bootstrap gui/$(id -u) /Library/LaunchAgents/com.paloaltonetworks.gp.pangpa.plist
+   fi
+   echo "Done"
+}
 
 function perf {
   curl -o /dev/null -s -w "%{time_connect} + %{time_starttransfer} = %{time_total} s\n" "$1"
