@@ -46,7 +46,7 @@ Recommended reading for beginners: https://git-scm.com/book/en/v2/Git-Basics-Get
 
 - `git push -u origin <new-branch>` - Push the local branch and set it to track the upstream remote branch.
 
-- `git branch -u origin <branch>` - Set a local branch to track a remote branch.
+- `git branch -u origin/<branch>` - Set a local branch to track an existing remote branch.
 
 - `git remote -vv` - View tracked remote repositories.
 
