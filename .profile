@@ -58,7 +58,8 @@ function perf {
 }
 
 # Before using this utility, verify that .ssh/config has a * rule that adds keys to the agent.
-# The presence of such a rule should automatically add a key the first time it is used.
+# The presence of such a rule, plus a config entry that links a hostname to a key,
+# should automatically add a key the first time it is used.
 function sshup {
     # If ssh auth isn't working, try running:
     # ssh -vT github
