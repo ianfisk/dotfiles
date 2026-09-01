@@ -57,6 +57,8 @@ function perf {
   curl -o /dev/null -s -w "%{time_connect} + %{time_starttransfer} = %{time_total} s\n" "$1"
 }
 
+# Before using this utility, verify that .ssh/config has a * rule that adds keys to the agent.
+# The presence of such a rule should automatically add a key the first time it is used.
 function sshup {
     # If ssh auth isn't working, try running:
     # ssh -vT github
