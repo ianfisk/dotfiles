@@ -146,4 +146,9 @@
 	"explorer.confirmDelete": false,
 	"terraform.languageServer.enable": true,
 	"notebook.dragAndDropEnabled": false,
+	"files.watcherExclude": {
+		"**/.bloop/**": true,
+		"**/.metals/**/*.{java,scala}": true
+	},
+	"metals.shutdownBloopOnEditorClose": true,
 }
