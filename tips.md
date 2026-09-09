@@ -93,6 +93,8 @@ I prefer using a [stacked diffs](https://jg.gg/2018/09/29/stacked-diffs-versus-p
 - `git commit --fixup <commit-hash>` - Add changes to a previous commit. Follow by `git rebase --autosquash` and `git review` to update PR stack.
 	- NOTE: Interactive rebasing also works; `git review` uses persistent `Change-Id`s to track canonical commits across rebases.
 
+NOTE: Occasionally run `git fetch --prune` to delete local references to temporary remote branches. They build up fast.
+
 ## Vim
 
 Cheatsheet: https://devhints.io/vim
