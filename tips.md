@@ -76,7 +76,6 @@ Recommended reading for beginners: https://git-scm.com/book/en/v2/Git-Basics-Get
 	git config --global user.email "<...>"
 	git config --global pull.rebase "true"
 	git config --global alias.fpush "push --force-with-lease --force-if-includes"
-	git config --global alias.
 
  	# Delete all `maiao` branches on a given remote $1. Usage: git cleanup origin
 	git config --global alias.cleanup '!f() { git branch -r --list "$1/maiao.*" | sed "s|$1/||" | xargs git push "$1" --delete; }; f'
