@@ -34,6 +34,7 @@ alias oc='opencode'
 alias ca='source ~/miniforge3/bin/activate' # Prefer activating Conda when I need it.
 alias cad='conda deactivate'
 alias csu-vpn='toggle_csu_vpn'
+alias usage='cd; du -sh * .??* | sort -rh | more'
 
 export EDITOR='/usr/bin/vim'
 export BASH_SILENCE_DEPRECATION_WARNING=1
