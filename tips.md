@@ -166,3 +166,4 @@ _In tmux..._
 - `Ctrl+b, "` - Split the screen into two panes.
 	- `Ctrl+b, o` - Switch pane.
  	- `Ctrl+b, x` - Close pane.
+- On linux, scroll by entering Copy Mode `Ctrl+b, [`, scroll, exit with `q`.
