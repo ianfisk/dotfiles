@@ -94,7 +94,13 @@
 		"editor.insertSpaces": true,
 	},
 	"[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true,
 		"editor.quickSuggestionsDelay": 1000,
+	},
+	"[scala]": {
+		"editor.insertSpaces": true,
+		"editor.tabSize": 2
 	},
 	"java.autobuild.enabled": false,
 	"java.inlayHints.parameterNames.enabled": "none",
@@ -155,5 +161,6 @@
 	"jupyter.askForKernelRestart": false,
 	"editor.minimap.autohide": true,
 	"markdown.preview.scrollPreviewWithEditor": false,
-	"markdown.preview.scrollEditorWithPreview": false
+	"markdown.preview.scrollEditorWithPreview": false,
+	"python.analysis.typeCheckingMode": "standard"
 }
